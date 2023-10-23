@@ -1,6 +1,15 @@
+"use client"
 
+import { Heading, getCssText } from "@ignite-ui/react";
+import { globalStyles } from "./global"
+
+
+globalStyles();
 export default function Home() {
   return (
-   <h1>HOME</h1>
+    <>
+    <style id='stitches' dangerouslySetInnerHTML={{ __html: getCssText()}}/> 
+   <Heading>HOME</Heading>
+    </>
   )
 }
